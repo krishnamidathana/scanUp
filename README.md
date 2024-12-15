@@ -5,15 +5,25 @@
 Build a React Native Android application demonstrating the ability to implement QR code scanning, custom dropdowns, and PDF generation. The application includes two pages with functionality for scanning QR codes, entering data, displaying the data, selecting values from dropdowns, and generating and sharing a PDF.
 
 ## Table of Contents
-1. [Technologies Used](#technologies-used)
-2. [Application Structure](#application-structure)
-3. [Features](#features)
+1.Folder Structure
+2. [Technologies Used](#technologies-used)
+3. [Application Structure](#application-structure)
+4. [Features](#features)
     - [Page 1 - QR Code Scanning and Data Entry](#page-1---qr-code-scanning-and-data-entry)
     - [Page 2 - Data Display, Dropdowns, and PDF Generation](#page-2---data-display-dropdowns-and-pdf-generation)
-4. [App Flow](#app-flow)
 5. [Conclusion](#conclusion)
 
 ---
+
+/src
+  /components
+    QRCodeScanner.js  -- QR code scanner component
+    Dropdown.js       -- Custom dropdown component
+    PDFGenerator.js   -- Component for generating PDF
+  /screens
+    Page1.js          -- QR Code scanning and data input page
+    Page2.js          -- Display scanned data, dropdowns, and submit button
+  App.js              -- Main component with navigation setup
 
 ## Technologies Used
 
@@ -23,11 +33,6 @@ Build a React Native Android application demonstrating the ability to implement 
 - **React Navigation**: For managing navigation between pages.
 - **Date Picker**: For selecting the Load Date.
   
----
-
-## Application Structure
-
-+-----------------------------+ | Launch App | +-----------------------------+ | v +-----------------------------+ | Page 1: QR Scanning | | (Scan QR Codes, Enter | | Data: Eway Bill, | | Challa No, Expense, | | Load Date) | +-----------------------------+ | v +-----------------------------+ | Page 2: Display Data | | (Show Scanned Data, | | Dropdowns, Submit Button| +-----------------------------+ | v +-----------------------------+ | Generate & Share PDF | | (Print, Save, Share PDF) | +-----------------------------+
 
 ---
 
