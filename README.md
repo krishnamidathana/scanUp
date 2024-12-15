@@ -15,15 +15,19 @@ Build a React Native Android application demonstrating the ability to implement 
 
 ---
 
-/src
-  /components
-    QRCodeScanner.js  -- QR code scanner component
-    Dropdown.js       -- Custom dropdown component
-    PDFGenerator.js   -- Component for generating PDF
-  /screens
-    Page1.js          -- QR Code scanning and data input page
-    Page2.js          -- Display scanned data, dropdowns, and submit button
-  App.js              -- Main component with navigation setup
+
+### Folder Structure Explanation:
+
+- **/src**: Contains all the source code for the app.
+  - **/components**: Reusable components used throughout the app.
+    - **QRCodeScanner.js**: Implements the QR code scanner using `react-native-vision-camera`.
+    - **Dropdown.js**: Custom dropdown component for selecting vehicle, owner, and state.
+    - **PDFGenerator.js**: Handles PDF generation functionality.
+  - **/screens**: Contains the two pages of the app.
+    - **Page1.js**: Handles QR scanning, data input (Eway Bill, Challa No, Expense, Load Date), and navigation.
+    - **Page2.js**: Displays the scanned data, dropdowns, and includes a submit button to generate the PDF.
+  - **App.js**: Main entry point of the app that sets up navigation and routing.
+             -- Main component with navigation setup
 
 ## Technologies Used
 
