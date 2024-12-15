@@ -7,11 +7,10 @@ Build a React Native Android application demonstrating the ability to implement 
 ## Table of Contents
 1.Folder Structure
 2. [Technologies Used](#technologies-used)
-3. [Application Structure](#application-structure)
-4. [Features](#features)
+3. [Features](#features)
     - [Page 1 - QR Code Scanning and Data Entry](#page-1---qr-code-scanning-and-data-entry)
     - [Page 2 - Data Display, Dropdowns, and PDF Generation](#page-2---data-display-dropdowns-and-pdf-generation)
-5. [Conclusion](#conclusion)
+4. [Conclusion](#conclusion)
 
 ---
 
@@ -37,6 +36,33 @@ Build a React Native Android application demonstrating the ability to implement 
 - **React Navigation**: For managing navigation between pages.
 - **Date Picker**: For selecting the Load Date.
   
+
+## Features
+
+### Page 1 - QR Code Scanning and Data Entry
+- **QR Code Scanners**: Implements three custom QR code scanners using `react-native-vision-camera`. Users can scan QR codes and retrieve their values.
+- **User Inputs**: Provides text input fields for:
+  - Eway Bill No (Text Input)
+  - Challa No (Text Input)
+  - Expense (Numerical values only)
+  - Load Date (Date picker can be implemented if required)
+- **Navigation**: A "Next" button that navigates to Page 2, passing the scanned data and user inputs to the next page.
+
+### Page 2 - Data Display, Dropdowns, and PDF Generation
+- **Data Display**: Displays the scanned QR code data along with the user input values (Eway Bill, Challa No, Expense, Load Date).
+- **Custom Dropdowns**: Users can select from the following dropdowns:
+  - **Vehicle Name**: Dummy data representing different vehicle names.
+  - **Vehicle Owner Name**: Dummy data representing different vehicle owner names.
+  - **State**: Dummy data representing different states.
+- **PDF Generation**: On clicking the "Submit" button:
+  - A PDF is generated containing:
+    - Scanned QR code data
+    - Text input field values (Eway Bill, Challa No, Expense, Load Date)
+    - Selected dropdown values (Vehicle Name, Vehicle Owner, State)
+  - **Actions after PDF generation**:
+    - **Print** the PDF.
+    - **Save** the PDF to the device.
+    - **Share** the PDF via various platforms like WhatsApp, Email, etc.
 
 ---
 
