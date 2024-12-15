@@ -4,79 +4,37 @@
 
 Build a React Native Android application demonstrating the ability to implement QR code scanning, custom dropdowns, and PDF generation. The application includes two pages with functionality for scanning QR codes, entering data, displaying the data, selecting values from dropdowns, and generating and sharing a PDF.
 
----
-
 ## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Application Structure](#application-structure)
-- [Features](#features)
-- [How to Run the Application](#how-to-run-the-application)
+1. [Technologies Used](#technologies-used)
+2. [Application Structure](#application-structure)
+3. [Features](#features)
+    - [Page 1 - QR Code Scanning and Data Entry](#page-1---qr-code-scanning-and-data-entry)
+    - [Page 2 - Data Display, Dropdowns, and PDF Generation](#page-2---data-display-dropdowns-and-pdf-generation)
+4. [App Flow](#app-flow)
+5. [Conclusion](#conclusion)
 
 ---
-##Application Structure
 
-/src
-  /components
-    QRCodeScanner.js  -- QR code scanner component
-    Dropdown.js       -- Custom dropdown component
-    PDFGenerator.js   -- Component for generating PDF
-  /screens
-    Page1.js          -- QR Code scanning and data input page
-    Page2.js          -- Display scanned data, dropdowns, and submit button
-  App.js              -- Main component with navigation setup
+## Technologies Used
 
-##Features
-###Page 1 - QR Code Scanning and Data Entry
-QR Code Scanners: Implements three custom QR code scanners using react-native-vision-camera.
-User Inputs: Text input fields for:
-Eway Bill No
-Challa No
-Expense (Only numerical values)
-Load Date (Date picker can be implemented if required)
-Navigation: "Next" button to navigate to Page 2 with scanned data passed.
+- **React Native**: For building the cross-platform mobile application.
+- **react-native-vision-camera**: For implementing QR code scanning.
+- **react-native-pdf-lib**: For generating the PDF file.
+- **React Navigation**: For managing navigation between pages.
+- **Date Picker**: For selecting the Load Date.
+  
+---
 
-###Page 2 - Data Display, Dropdowns, and PDF Generation
-Data Display: Shows scanned QR code data and user input values from Page 1.
-Custom Dropdowns: Allows users to select:
-Vehicle Name (Dummy data)
-Vehicle Owner Name (Dummy data)
-State (Dummy data)
-PDF Generation: On clicking "Submit", a PDF is generated with the following:
-Scanned QR code data
-Text input field values
-Dropdown selected values
-Allows users to print, save, or share the PDF.
+## Application Structure
 
-#APP FLOW
++-----------------------------+ | Launch App | +-----------------------------+ | v +-----------------------------+ | Page 1: QR Scanning | | (Scan QR Codes, Enter | | Data: Eway Bill, | | Challa No, Expense, | | Load Date) | +-----------------------------+ | v +-----------------------------+ | Page 2: Display Data | | (Show Scanned Data, | | Dropdowns, Submit Button| +-----------------------------+ | v +-----------------------------+ | Generate & Share PDF | | (Print, Save, Share PDF) | +-----------------------------+
 
-+-----------------------------+
-|         Launch App           |
-+-----------------------------+
-             |
-             v
-+-----------------------------+
-|     Page 1: QR Scanning     |
-|   (Scan QR Codes, Enter     |
-|    Data: Eway Bill,         |
-|     Challa No, Expense,     |
-|     Load Date)              |
-+-----------------------------+
-             |
-             v
-+-----------------------------+
-|     Page 2: Display Data    |
-|   (Show Scanned Data,       |
-|     Dropdowns, Submit Button|
-+-----------------------------+
-             |
-             v
-+-----------------------------+
-|     Generate & Share PDF    |
-|   (Print, Save, Share PDF)  |
-+-----------------------------+
+---
 
+## Conclusion
 
-##Conclusion
-###This React Native application implements QR code scanning, custom dropdowns, and PDF generation, providing a comprehensive example of these features. The project is modular, using separate components for QR scanning, dropdowns, and PDF generation.
+This **React Native** application demonstrates the implementation of QR code scanning, custom dropdowns, and PDF generation, providing a comprehensive example of these features. The project is modular, with separate components for QR scanning, dropdowns, and PDF generation, ensuring easy management and scalability.
 
+--- 
+
+Feel free to customize or expand upon this **README** based on your project's specific needs and features.
