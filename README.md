@@ -15,7 +15,7 @@ Build a React Native Android application demonstrating the ability to implement 
 
 ---
 
-
+ 
 ### Folder Structure Explanation:
 
 - **/src**: Contains all the source code for the app.
