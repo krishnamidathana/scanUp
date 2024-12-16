@@ -33,7 +33,6 @@ Build a React Native Android application demonstrating the ability to implement 
 - **React Native**: For building the cross-platform mobile application.
 - **react-native-vision-camera**: For implementing QR code scanning.
 - **react-native-pdf-lib**: For generating the PDF file.
-- **React Navigation**: For managing navigation between pages.
 - **Date Picker**: For selecting the Load Date.
   
 
